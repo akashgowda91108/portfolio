@@ -11,7 +11,6 @@
 :root {
     --primary:#4f46e5;
     --dark:#0f172a;
-    --light:#64748b;
     --bg:#f8fafc;
 }
 
@@ -35,19 +34,13 @@ nav {
     justify-content:space-between;
     padding:15px 40px;
     box-shadow:0 2px 10px rgba(0,0,0,0.08);
-    z-index:1000;
 }
-
-nav h2 { color:var(--primary); }
 
 nav a {
-    margin-left:25px;
+    margin-left:20px;
     text-decoration:none;
     color:var(--dark);
-    font-weight:500;
 }
-
-nav a:hover { color:var(--primary); }
 
 /* HERO */
 .hero {
@@ -56,24 +49,18 @@ nav a:hover { color:var(--primary); }
     align-items:center;
     justify-content:center;
     text-align:center;
-    padding:20px;
     background:linear-gradient(135deg,#6366f1,#8b5cf6);
     color:white;
+    padding:20px;
 }
 
-.hero h1 {
-    font-size:3rem;
-}
+.hero h1 { font-size:3rem; }
 
-.hero h3 {
-    margin:10px 0;
-    font-weight:400;
-}
+.hero p { margin:15px 0; }
 
-.hero p {
-    max-width:700px;
-    margin:15px auto;
-    line-height:1.6;
+/* BUTTON FIX */
+.button-group {
+    margin-top:20px;
 }
 
 .btn {
@@ -87,7 +74,7 @@ nav a:hover { color:var(--primary); }
 
 .btn-primary {
     background:white;
-    color:var(--primary);
+    color:#4f46e5;
 }
 
 .btn-outline {
@@ -105,13 +92,6 @@ section {
     margin:auto;
 }
 
-.section-title {
-    text-align:center;
-    margin-bottom:40px;
-    font-size:2rem;
-}
-
-/* CARD */
 .card {
     background:white;
     padding:20px;
@@ -120,7 +100,6 @@ section {
     margin-bottom:20px;
 }
 
-/* GRID */
 .grid {
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
@@ -129,27 +108,20 @@ section {
 
 /* SKILLS */
 .skills span {
-    background:var(--primary);
+    background:#4f46e5;
     color:white;
     padding:8px 14px;
     border-radius:20px;
     margin:5px;
     display:inline-block;
-    font-size:14px;
 }
 
 /* FOOTER */
 footer {
-    background:var(--dark);
+    background:#0f172a;
     color:white;
     text-align:center;
     padding:20px;
-}
-
-/* RESPONSIVE */
-@media(max-width:768px){
-    .hero h1 { font-size:2.2rem; }
-    nav { padding:15px; }
 }
 </style>
 </head>
@@ -171,31 +143,37 @@ footer {
 <section class="hero">
 <div>
     <h1>Akash Gowda M V</h1>
-    <h3>Data Analyst | Business Intelligence | Full Stack Developer</h3>
+    <h3>Data Analyst | Power BI Developer</h3>
 
     <p>
-    Highly motivated Electronics and Communication Engineering undergraduate with hands-on experience in data analytics and full-stack development. Skilled in Power BI, SQL, DAX, Python, React, and Django, seeking an entry-level role in Data Analytics / Business Intelligence.
+    Skilled in Power BI, SQL, DAX, Python, React, and Django.
+    Passionate about building dashboards and business insights.
     </p>
 
     <p>📍 Bengaluru | 📞 +91 9110836321 | ✉️ 1akash1800145@gmail.com</p>
 
-    <a href="#projects" class="btn btn-primary">View Projects</a>
-   <a href="https://github.com/akashgowda91108/PowerBI-Reports" 
-   class="btn btn-outline" target="_blank">
-   View Power BI Projects (GitHub)
-</a>
+    <!-- FIXED BUTTONS -->
+    <div class="button-group">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+
+        <a href="https://github.com/akashgowda91108/PowerBI-Reports"
+           target="_blank"
+           class="btn btn-outline">
+           GitHub Projects
+        </a>
+    </div>
 </div>
 </section>
 
 <!-- EDUCATION -->
-<section id="education" style="background:var(--bg);">
+<section id="education" style="background:#f8fafc;">
 <div class="container">
-    <h2 class="section-title">Education</h2>
+    <h2>Education</h2>
 
     <div class="card">
-        <h3>B.Tech – Electronics and Communication Engineering</h3>
-        <p>Global Academy of Technology, Bengaluru (2022–2026)</p>
-        <p><b>CGPA:</b> 7.3</p>
+        <h3>B.Tech – ECE</h3>
+        <p>Global Academy of Technology (2022–2026)</p>
+        <p>CGPA: 7.3</p>
     </div>
 </div>
 </section>
@@ -203,52 +181,47 @@ footer {
 <!-- EXPERIENCE -->
 <section id="experience">
 <div class="container">
-    <h2 class="section-title">Experience</h2>
+    <h2>Experience</h2>
 
     <div class="card">
         <h3>Power BI Developer Intern</h3>
-        <p>DataProwess | Aug 2025 – April 2026</p>
+        <p>DataProwess | Aug 2025 – Apr 2026</p>
 
         <ul>
-            <li>Data cleaning, transformation, and modeling</li>
-            <li>Built interactive dashboards</li>
-            <li>SQL & DAX for analysis</li>
+            <li>Built dashboards for KPI tracking</li>
+            <li>Used SQL & DAX for analysis</li>
             <li>Optimized report performance</li>
             <li>ETL using Power Query</li>
-            <li>End-to-end reporting workflow</li>
-            <li>Full-stack development (React, Django)</li>
         </ul>
     </div>
 </div>
 </section>
 
 <!-- PROJECTS -->
-<section id="projects" style="background:var(--bg);">
+<section id="projects" style="background:#f8fafc;">
 <div class="container">
-    <h2 class="section-title">Projects</h2>
+    <h2>Projects</h2>
 
     <div class="grid">
         <div class="card">
-            <h3>Tableau → Power BI Migration</h3>
-<ul>
-    <li>Recreated dashboards using DAX</li>
-    <li>Built KPIs & visuals</li>
-    <li>Ensured data accuracy</li>
-</ul>
+            <h3>Power BI Migration</h3>
+            <ul>
+                <li>Recreated dashboards using DAX</li>
+                <li>Built KPIs & visuals</li>
+            </ul>
 
-<a href="https://github.com/akashgowda91108/PowerBI-Reports" 
-   target="_blank" 
-   class="btn btn-primary">
-   View Project (Download PBIX)
-</a>
+            <a href="https://github.com/akashgowda91108/PowerBI-Reports"
+               target="_blank"
+               class="btn btn-primary">
+               View Project
+            </a>
         </div>
 
         <div class="card">
             <h3>Full Stack Web Apps</h3>
             <ul>
-                <li>React + Django apps</li>
-                <li>API integration</li>
-                <li>CRUD operations</li>
+                <li>React + Django</li>
+                <li>CRUD & API integration</li>
             </ul>
         </div>
     </div>
@@ -258,22 +231,15 @@ footer {
 <!-- SKILLS -->
 <section id="skills">
 <div class="container">
-    <h2 class="section-title">Skills</h2>
+    <h2>Skills</h2>
 
     <div class="skills">
         <span>Power BI</span>
-        <span>Tableau</span>
         <span>SQL</span>
         <span>DAX</span>
-        <span>Excel</span>
         <span>Python</span>
         <span>React</span>
         <span>Django</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>C</span>
-        <span>C++</span>
-        <span>Java</span>
     </div>
 </div>
 </section>
