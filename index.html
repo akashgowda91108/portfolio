@@ -25,7 +25,7 @@ body {
     color:var(--dark);
 }
 
-/* NAVBAR */
+/* NAV */
 nav {
     position:fixed;
     width:100%;
@@ -54,11 +54,6 @@ nav a {
     padding:20px;
 }
 
-.hero h1 { font-size:3rem; }
-
-.hero p { margin:15px 0; }
-
-/* BUTTON FIX */
 .button-group {
     margin-top:20px;
 }
@@ -97,7 +92,6 @@ section {
     padding:20px;
     border-radius:10px;
     box-shadow:0 5px 20px rgba(0,0,0,0.08);
-    margin-bottom:20px;
 }
 
 .grid {
@@ -152,7 +146,6 @@ footer {
 
     <p>📍 Bengaluru | 📞 +91 9110836321 | ✉️ 1akash1800145@gmail.com</p>
 
-    <!-- FIXED BUTTONS -->
     <div class="button-group">
         <a href="#projects" class="btn btn-primary">View Projects</a>
 
@@ -165,65 +158,43 @@ footer {
 </div>
 </section>
 
-<!-- EDUCATION -->
-<section id="education" style="background:#f8fafc;">
-<div class="container">
-    <h2>Education</h2>
-
-    <div class="card">
-        <h3>B.Tech – ECE</h3>
-        <p>Global Academy of Technology (2022–2026)</p>
-        <p>CGPA: 7.3</p>
-    </div>
-</div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-<div class="container">
-    <h2>Experience</h2>
-
-    <div class="card">
-        <h3>Power BI Developer Intern</h3>
-        <p>DataProwess | Aug 2025 – Apr 2026</p>
-
-        <ul>
-            <li>Built dashboards for KPI tracking</li>
-            <li>Used SQL & DAX for analysis</li>
-            <li>Optimized report performance</li>
-            <li>ETL using Power Query</li>
-        </ul>
-    </div>
-</div>
-</section>
-
 <!-- PROJECTS -->
 <section id="projects" style="background:#f8fafc;">
 <div class="container">
     <h2>Projects</h2>
 
     <div class="grid">
+
+        <!-- POWER BI PROJECT -->
         <div class="card">
-            <h3>Power BI Migration</h3>
+            <h3>Power BI Migration & Dashboard Development</h3>
             <ul>
-                <li>Recreated dashboards using DAX</li>
-                <li>Built KPIs & visuals</li>
+                <li>Migrated dashboards from Tableau to Power BI ensuring KPI consistency</li>
+                <li>Built interactive dashboards using DAX and data modeling</li>
+                <li>Implemented time intelligence calculations (YTD, MTD, Rolling)</li>
+                <li>Optimized performance and improved report usability</li>
+                <li>Created dynamic filters, slicers, and drill-down reports</li>
             </ul>
 
             <a href="https://github.com/akashgowda91108/PowerBI-Reports"
                target="_blank"
                class="btn btn-primary">
-               View Project
+               View Project (Download PBIX)
             </a>
         </div>
 
+        <!-- FULL STACK PROJECT -->
         <div class="card">
-            <h3>Full Stack Web Apps</h3>
+            <h3>Full Stack Web Applications</h3>
             <ul>
-                <li>React + Django</li>
-                <li>CRUD & API integration</li>
+                <li>Developed web applications using React (frontend) and Django (backend)</li>
+                <li>Designed REST APIs and integrated with SQL databases</li>
+                <li>Implemented CRUD operations and authentication features</li>
+                <li>Built responsive UI for better user experience</li>
+                <li>Deployed applications and managed backend services</li>
             </ul>
         </div>
+
     </div>
 </div>
 </section>
@@ -237,7 +208,8 @@ footer {
         <span>Power BI</span>
         <span>SQL</span>
         <span>DAX</span>
-        <span>DAX</span>
+        <span>Excel</span>
+        <span>Python</span>
         <span>React</span>
         <span>Django</span>
     </div>
